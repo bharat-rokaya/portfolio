@@ -58,16 +58,16 @@ nav .left a {
 
 nav .right a {
     display: inline-block;
-    transition: transform 0.2s ease;
+    transition: all 0.2s ease;
     color: var(--text-color);
     margin: 0 10px;
+    padding: 4px 8px;
 }
 
 nav .right a:last-child {
     color: var(--background-color);
     background-color: var(--text-color);
     padding: 5px 15px;
-    border-radius: 5px;
 }
 nav .right a span {
     margin-left: 5px;
@@ -75,6 +75,8 @@ nav .right a span {
 
 nav .right a:hover {
     transform: translateY(-5px);
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 
@@ -157,7 +159,7 @@ nav .right a:hover {
     animation: popIn 0.6s ease forwards;
 }
 
-.skills-section .skills .skills-images {
+.skills-section .skills .skills-images .inner {
     display: flex;
     justify-content: center;
     align-items: center;

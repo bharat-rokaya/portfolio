@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("9Pf3TNKeUqfgVoHGw");
+        })();
+    </script>
 </head>
 
 <body>
@@ -203,38 +211,24 @@
                     If you have any questions, project ideas, or opportunities, feel free to reach out. I'm always open to discussing new projects, collaborations, or learning opportunities. Just send me a message and I’ll get back to you as soon as possible.
                 </div>
 
-                <form class="hidden">
+                <form id="contact-form" class="hidden" target="_blank">
+                    <input type="hidden" name="form-name" value="contact">
+
                     <label for="name">Name</label>
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" name="name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email"required>
 
                     <label for="messsage">Message</label>
-                    <textarea id="message" cols="30" rows="10" required></textarea>
+                    <textarea id="message" cols="30" rows="10" name="message" required></textarea>
 
-                    <button type="submit">
-                        <a href="mailto:bharat12rokaya123@gmail.com"></a>Send Message</button>
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                } else {
-                    entry.target.classList.remove("show");
-                }
-            });
-        }, {
-            threshold: 0.2
-        });
-
-        const hiddenElements = document.querySelectorAll(".hidden");
-        hiddenElements.forEach((el) => observer.observe(el));
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
