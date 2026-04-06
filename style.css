@@ -189,11 +189,76 @@ nav .right a:hover {
     transform: scale(1.05);
 }
 
+/* SECTION 3: Projects */
+.project-section {
+    padding: 0 50px;
+    margin-bottom: 120px;
+}
 
-/* SECTION 3: Socials */
+.project-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.project-section .text {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project-section .project-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    animation: float 3s ease-in-out infinite;
+    animation: fadeSlideUp 1.2s ease forwards;
+}
+
+.project-section .project-items a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.35s ease;
+    position: relative;
+    border: none;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease;
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin: 15px 15px 8px;
+    color: #111;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #333;
+    margin: 0 15px 20px;
+    line-height: 1.5;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* SECTION 4: Socials */
 .social-section {
     padding: 0 50px;
     margin-bottom: 100px; 
+    text-decoration: none;
 }
 
 .social-section h2 {
@@ -203,8 +268,8 @@ nav .right a:hover {
 }
 
 .social-section .text {
-    text-align: center;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .social-section .social {
@@ -234,12 +299,23 @@ nav .right a:hover {
     background: var(--background-color) ;   
     color: var(--text-color);
     cursor: pointer;  
-    animation: pulse 2s infinite;  
+    animation: pulse 2s infinite; 
 }
 
 .social-section .social .social-icons a i {
     display: inline-block;
     transition: all 0.3s ease;
+    justify-items: center;
+}
+
+.social-section .social .social-icons a.rednote {
+    filter: grayscale(100%);
+}
+
+.social-section .social .social-icons a.rednote img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
 }
 
 .social-section .social .social-icons span {
@@ -291,7 +367,7 @@ nav .right a:hover {
 
 .social-section .social .social-icons a.wechat:hover {
     background: var(--background-color);
-    color:#07c160;
+    color: #07c160;
 }
 
 .social-section .social .social-icons a.tiktok:hover i {
@@ -306,9 +382,20 @@ nav .right a:hover {
     color: #25d366;
 }
 
+.social-section .social .social-icons a.rednote:hover {
+    background: var(--background-color);
+    color: red;
+    filter: grayscale(0%);
+}
 
 
-/* SECTION 4: Contact */
+.social-section .social .social-icons a.reddit:hover {
+    background: var(--background-color);
+    color: #ff4500;
+}
+
+
+/* SECTION 5: Contact */
 .contact-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -433,7 +520,12 @@ nav .right a:hover {
         width: 300px;
     }
 
-    /* SECTION 4: Contact */
+    /* SECTION 3: Project */
+    .project-section .project-items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* SECTION 5: Contact */
     .contact-section .group {
         flex-direction: column;
     }
@@ -477,12 +569,21 @@ nav .right a:hover {
         font-size: 16px;
     }
 
-    /* SECTION 3: Social */
-    .social-section {
-        padding: 0 20px;
+     /* SECTION 3: Project */
+    .project-section {
+        padding: 0px 20px;
     }
 
-    /* SECTION 4: Contact */
+    .project-section .project-items {
+        grid-template-columns: 1fr;
+    }
+
+    /* SECTION 4: Social */
+    .social-section {
+        padding: 0px 20px;
+    }
+
+    /* SECTION 5: Contact */
     .contact-section {
         padding: 0px 20px;
     }

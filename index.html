@@ -23,11 +23,11 @@
 <body>
     <!-- NAVBAR -->
     <nav>
-        <div class="left">
+        <div class="left hidden">
             <a href="/">Bharat Rokaya</a>
         </div>
 
-        <div class="right">
+        <div class="right hidden">
             <a href="http://github.com/bharat-rokaya" target="_blank" rel="noopenernoreferrer">
                 <i class="fa-brands fa-github"></i>
                 <span>Github</span>
@@ -50,14 +50,19 @@
         <section class="hero-section">
             <div class="text hidden">
                 <h2>Hi, I'm Bharat</h2>
-                <p>
+                <p class="hidden">
                     I’m a passionate and detail-oriented web developer focused on building clean, responsive, and user-friendly websites. I enjoy turning ideas into real-world projects using modern technologies like HTML, CSS, JavaScript, and React. I'm always learning and improving my skills to create better digital experiences.
                </p>
 
-                <div class="links">
+                <div class="links hidden">
                     <a href="#skills">
                         <i class="fa-solid fa-code"></i>
                         <span>Skills</span>
+                    </a>
+
+                    <a href="#project">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Projects</span>
                     </a>
 
                      <a href="#social">
@@ -108,21 +113,80 @@
 
                 <div class="skills-images hidden">
                     <div class="inner">
-                        <img src="images/react.js-logo.png" alt="react logo">
+                        <img src="images/react.js-logo.png" alt="react.js logo">
                         <span>React.js</span>
                     </div>
                 </div>
 
                 <div class="skills-images hidden">
                     <div class="inner">
-                        <img src="images/node.js-logo.png" alt="node logo">
+                        <img src="images/node.js-logo.png" alt="node.js logo">
                         <span>Node.js</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 3: Social -->
+        <!-- Section 3: Project-->
+        <section class="project-section" id="project">
+            <h2 class="hidden">Projects</h2>
+            <div class="text hidden">
+                Here are some of the projects I've built while learning and exploring web development. From smalls to interactive apps, each project helped me improve my skills and ubderstand how things work in real-world scenarios.
+            </div>
+
+            <div class="project-items">
+                <a href="https://passwordgenerator0012.netlify.app/" target="_blank">
+                    <div class="project-card hidden">
+                        <img src="images/password-generator.png">
+                        <h3>Password Generator</h3>
+                        <p>Generate strong, secure passwords instantly with customizable length and character options. Automatically checks the password strength.</p>
+                    </div>
+                </a>
+
+                <a href="https://todoapp012.netlify.app/" target="_blank">
+                    <div class="project-card hidden">
+                        <img src="images/to-do.png">
+                        <h3>To Do App</h3>
+                        <p>A simple and efficient task manager to organize daily activities. Add, edit and track tasks to stay productive and focused.</p>
+                    </div>
+                </a>
+
+                <a href="https://expensetracker012.netlify.app/" target="_blank">
+                    <div class="project-card hidden">
+                        <img src="images/expense-tracker.png">
+                        <h3>Expenses Tracker</h3>
+                        <p>Track your income and expenses in real-time with a clean interface. Helps user manage finances and understand spending habits.</p>
+                    </div>
+                </a>
+
+                <a href="https://foodrecipefinder012.netlify.app/" target="_blank">
+                    <div class="project-card hidden">
+                        <img src="images/food-recipe.png">
+                        <h3>Food Recipe Finder</h3>
+                        <p>Discover recipes based on ingredients or dish names. Fetches real-time data to help users cook something delicious anytime. </p>
+                    </div>
+                </a>
+
+                <a href="https://pokemonviewer012.netlify.app/" target="_blank">
+                    <div class="project-card hidden">
+                        <img src="images/pokemon-viewer.png">
+                        <h3>Pokemon Viewer</h3>
+                        <p>Browse and explore Pokémon with detailed stats and images using an external API. Fun and interactive for Pokémon fans.</p>
+                    </div>
+                </a>
+
+                <a href="https://imageshuffler012.netlify.app/" target="_blank">
+                    <div class="project-card hidden">
+                        <img src="images/image-shuffler.png">
+                        <h3>Image Shuffler</h3>
+                        <p>Randomly displays images with a click or action. A simple project demonstrating DOM manipulation and dynamic content updates.</p>
+                    </div>
+                </a>
+               
+            </div>
+        </section>
+
+        <!-- Section 4: Social -->
         <section class="social-section" id="social">
             <h2 class="hidden">Let's Connect & Get in Touch</h2>
             <div class="text hidden">
@@ -199,10 +263,26 @@
                         <span>Whatsapp</span>
                     </a>
                 </div>
+
+                 <div class="social-icons hidden">
+                    <a href="https://xhslink.com/m/3Q7PTR7dEzv" target="_blank" rel="noopenernoreferrer" class="rednote">
+                        <i>
+                            <img src="images/rednote.jpg" alt="rednote">
+                        </i>
+                        <span>Rednote</span>
+                    </a>
+                </div>
+
+                 <div class="social-icons hidden">
+                    <a href="https://reddit.com/user/No_Mind9996" target="_blank" rel="noopenernoreferrer" class="reddit">
+                        <i class="fa-brands fa-reddit"></i>
+                        <span>Reddit</span>
+                    </a>
+                </div>
             </div>
         </section>
 
-        <!-- Section 4: Contact -->
+        <!-- Section 5: Contact -->
         <section class="contact-section" id="contact">
             <h2 class="hidden">Contact</h2>
 
